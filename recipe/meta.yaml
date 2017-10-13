@@ -42,6 +42,14 @@ about:
   home: http://pythonpaste.org
   license: MIT
   summary: 'Tools for using a Web Server Gateway Interface stack'
+  description: |
+    Paste provides several pieces of "middleware" (or filters) that can be
+    nested to build web applications. Each piece of middleware uses the WSGI
+    (PEP 333) interface, and should be compatible with other middleware based
+    on those interfaces.
+  doc_url: https://paste.readthedocs.io/en/latest/
+  doc_source_url: https://bitbucket.org/ianb/paste/src/default/docs/index.txt
+  dev_url: https://bitbucket.org/ianb/paste
 
 extra:
   recipe-maintainers:
