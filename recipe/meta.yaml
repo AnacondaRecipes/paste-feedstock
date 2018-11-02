@@ -1,18 +1,15 @@
-{% set name = "paste" %}
-{% set version = "2.0.3" %}
-{% set build = 0 %}
+{% set version = "3.0.2" %}
 
 package:
-  name: {{ name }}
+  name: paste
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://bitbucket.org/ianb/paste/get/{{ version }}.tar.gz
-  sha256: d6b1ac1223c42d0a8de5e5fa46b142bff688d4f535738a0ba938d9b0a78533dd
+  url: https://pypi.org/packages/source/p/paste/Paste-{{ version }}.tar.gz
+  sha256: d64c65d7779a57b426c7d4112816310f6d92ab4f038990a7c877743180dac000
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
