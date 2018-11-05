@@ -1,4 +1,4 @@
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: paste
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/paste/Paste-{{ version }}.tar.gz
-  sha256: d64c65d7779a57b426c7d4112816310f6d92ab4f038990a7c877743180dac000
+  sha256: 96b06ff055c4f22a4e5c164551179ed1fa8263bc3ce69b4347c617cd0fcf51f4
 
 build:
   number: 0
@@ -17,7 +17,8 @@ requirements:
     - python
     - setuptools
     - six >=1.4.0
-
+    # pytest-runner is included in "setup_requires"
+    - pytest-runner
   run:
     - python
     - setuptools
