@@ -31,8 +31,10 @@ test:
     - paste.evalexception
     - paste.exceptions
     - paste.util
+  commands:
+    - pip check
   requires:
-    - nose >=0.11
+    - pip
 
 about:
   home: http://pythonpaste.org
